@@ -1,0 +1,62 @@
+
+header#homepage { background-position: center bottom; padding: 100px 0 150px; background-repeat: no-repeat; background-color: #2D2D2E; }
+
+header#homepage h1 { font-family: "Exo"; margin-bottom: 0em; font-size: 5em; color: white; font-style: italic; }
+
+header#homepage.homeslide-1 { background-image: url("../img/background_drawing.png"); }
+
+header#homepage h4 { font-family: 'Arvo'; font-style: italic; color:#185FFF; font-weight: 400}
+
+a.button {
+    font-family: 'Montserrat';      
+}
+
+.value h2 {
+    font-family: 'Montserrat';  
+    font-size: 1.5em;
+    color: #2D2D2E;
+}
+section[role=subsection] {
+    margin-bottom: 5em;
+}
+section[role=subsection] p {
+    font-family: 'Arvo'; 
+    //font-style: italic; 
+    //font-size: 1em; 
+    font-weight: 400;
+}
+section[role=subsection] header {
+    background-color: grey;
+    text-align: center;
+    margin-bottom: 4.5em;
+    padding-top: 0.8%;
+}
+section[role=subsection] header h2 {
+    font-family: 'Montserrat';
+    color:#F0F0F0;
+    font-size: 2.4em;
+}
+section#explaination {
+    background-color: #2D2D2E;
+}
+section#explaination h2[role=subtitle] {
+    margin-bottom: 2em;
+    color : #185FFF;
+}
+
+section#explaination i {
+    font-size: 6em;
+    color: grey;
+    @include single-text-shadow(0px,2px,1px,#FFFFFF); 
+}
+
+section#explaination p {
+    color: #FFFFFF;
+    font-size: 1.2em; 
+}
+section#explaination em {
+    background: rgb(51, 51, 51);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 10px rgba(0,0,0,.3), 0 1px 0 rgba(255,255,255,.1), 0 -1px 0 rgba(0,0,0,.5);
+}
