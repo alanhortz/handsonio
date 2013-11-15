@@ -7345,11 +7345,6 @@ a.button {
   color: #2D2D2E;
 }
 
-/* line 19, ../sass/_presentation.scss */
-section[role=subsection] {
-  margin-bottom: 5em;
-}
-
 /* line 22, ../sass/_presentation.scss */
 section[role=subsection] p {
   font-family: 'Arvo';
