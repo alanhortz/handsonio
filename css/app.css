@@ -7320,6 +7320,13 @@ header#homepage h1 {
   font-style: italic;
 }
 
+@media only screen and (max-width: 460px) {
+  /* line 128, ../../../../../.rvm/gems/ruby-2.0.0-p195/gems/zurb-foundation-4.3.2/scss/foundation/components/_dropdown.scss */
+  header#homepage h1 {
+    font-size: 3.5em;
+  }
+}
+
 /* line 6, ../sass/_presentation.scss */
 header#homepage.homeslide-1 {
   background-image: url("../img/background_drawing.png");
