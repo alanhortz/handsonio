@@ -7399,6 +7399,27 @@ section#explaination em {
   box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.5);
 }
 
+/* Responsive iFrame */
+/* line 65, ../sass/_presentation.scss */
+.responsive-iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 75, ../sass/_presentation.scss */
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* font-face */
 @font-face {
   font-family: "GeneralEnclosedFoundicons";
