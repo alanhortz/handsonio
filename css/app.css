@@ -7321,7 +7321,6 @@ header#homepage h1 {
 }
 
 @media only screen and (max-width: 460px) {
-  /* line 128, ../../../../../.rvm/gems/ruby-2.0.0-p195/gems/zurb-foundation-4.3.2/scss/foundation/components/_dropdown.scss */
   header#homepage h1 {
     font-size: 3.5em;
   }
