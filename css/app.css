@@ -7321,17 +7321,17 @@ header#homepage h1 {
 }
 
 @media only screen and (max-width: 460px) {
+  /* line 7, ../sass/_presentation.scss */
   header#homepage h1 {
     font-size: 3.5em;
   }
 }
-
-/* line 6, ../sass/_presentation.scss */
+/* line 12, ../sass/_presentation.scss */
 header#homepage.homeslide-1 {
   background-image: url("../img/background_drawing.png");
 }
 
-/* line 8, ../sass/_presentation.scss */
+/* line 14, ../sass/_presentation.scss */
 header#homepage h4 {
   font-family: 'Arvo';
   font-style: italic;
@@ -7339,25 +7339,25 @@ header#homepage h4 {
   font-weight: 400;
 }
 
-/* line 10, ../sass/_presentation.scss */
+/* line 16, ../sass/_presentation.scss */
 a.button {
   font-family: 'Montserrat';
 }
 
-/* line 14, ../sass/_presentation.scss */
+/* line 20, ../sass/_presentation.scss */
 .value h2 {
   font-family: 'Montserrat';
   font-size: 1.5em;
   color: #2D2D2E;
 }
 
-/* line 22, ../sass/_presentation.scss */
+/* line 28, ../sass/_presentation.scss */
 section[role=subsection] p {
   font-family: 'Arvo';
   font-weight: 400;
 }
 
-/* line 28, ../sass/_presentation.scss */
+/* line 34, ../sass/_presentation.scss */
 section[role=subsection] header {
   background-color: grey;
   text-align: center;
@@ -7365,25 +7365,25 @@ section[role=subsection] header {
   padding-top: 0.8%;
 }
 
-/* line 34, ../sass/_presentation.scss */
+/* line 40, ../sass/_presentation.scss */
 section[role=subsection] header h2 {
   font-family: 'Montserrat';
   color: #F0F0F0;
   font-size: 2.4em;
 }
 
-/* line 39, ../sass/_presentation.scss */
+/* line 45, ../sass/_presentation.scss */
 section#explaination {
   background-color: #2D2D2E;
 }
 
-/* line 42, ../sass/_presentation.scss */
+/* line 48, ../sass/_presentation.scss */
 section#explaination h2[role=subtitle] {
   margin-bottom: 2em;
   color: #185FFF;
 }
 
-/* line 47, ../sass/_presentation.scss */
+/* line 53, ../sass/_presentation.scss */
 section#explaination i {
   font-size: 6em;
   color: grey;
@@ -7391,13 +7391,13 @@ section#explaination i {
   text-shadow: 0px 2px 1px white #aaaaaa, 0px 2px 1px white #aaaaaa;
 }
 
-/* line 53, ../sass/_presentation.scss */
+/* line 59, ../sass/_presentation.scss */
 section#explaination p {
   color: #FFFFFF;
   font-size: 1.2em;
 }
 
-/* line 57, ../sass/_presentation.scss */
+/* line 63, ../sass/_presentation.scss */
 section#explaination em {
   background: #333333;
   color: #fff;
@@ -7406,7 +7406,7 @@ section#explaination em {
 }
 
 /* Responsive iFrame */
-/* line 65, ../sass/_presentation.scss */
+/* line 71, ../sass/_presentation.scss */
 .responsive-iframe-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -7415,7 +7415,7 @@ section#explaination em {
   overflow: hidden;
 }
 
-/* line 75, ../sass/_presentation.scss */
+/* line 81, ../sass/_presentation.scss */
 .responsive-iframe-container iframe,
 .vresponsive-iframe-container object,
 .vresponsive-iframe-container embed {

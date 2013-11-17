@@ -3,6 +3,12 @@ header#homepage { background-position: center bottom; padding: 100px 0 150px; ba
 
 header#homepage h1 { font-family: "Exo"; margin-bottom: 0em; font-size: 5em; color: white; font-style: italic; }
 
+@media only screen and (max-width: 460px) {
+  header#homepage h1 {
+    font-size: 3.5em;
+  }
+}
+
 header#homepage.homeslide-1 { background-image: url("../img/background_drawing.png"); }
 
 header#homepage h4 { font-family: 'Arvo'; font-style: italic; color:#185FFF; font-weight: 400}
