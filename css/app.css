@@ -7328,14 +7328,16 @@ header#homepage h1 {
 }
 /* line 12, ../sass/_presentation.scss */
 header#homepage.homeslide-1 {
-  background-image: url("../img/background_drawing.png");
+  /* background-image: url("../img/background_drawing.png"); */
+  background-image: url("../img/large_handsonio_logo_brick_wall.jpg");
+  
 }
 
 /* line 14, ../sass/_presentation.scss */
 header#homepage h4 {
   font-family: 'Arvo';
   font-style: italic;
-  color: #185FFF;
+  color: white;
   font-weight: 400;
 }
 
