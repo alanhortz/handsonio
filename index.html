@@ -1,142 +1,203 @@
----
-layout: default
-title: handson.io
----
-  <section role="main">
-    <header id="homepage" class="homeslide-1">
-      <div class="row">
-        <div class="large-6 columns">
-          <h1>handson.io</h1>
-          <h4>We are a movement dedicated to education and training</h4>
-        </div>
-        <div class="large-6 columns text-center">
-          <h3>&nbsp;</h3>
-          <a href="https://twitter.com/handsonio" target="_blank" id="btn-twitter" class="large success round radius button">FOLLOW US NOW ON TWITTER</a>
-          <a href="calendar.html" class="large round radius button secondary split" target="_blank">UPCOMING SESSIONS<span data-dropdown="drop1"></span></a>
-          <ul id="drop1" class="f-dropdown" data-dropdown-content>
-            <li><a href="https://www.google.com/calendar/ical/eribioo14ve6a5lbce4fp2mp8o%40group.calendar.google.com/public/basic.ics" target="_blank">Export as iCal</a></li>
-            <li><a href="https://www.google.com/calendar/feeds/eribioo14ve6a5lbce4fp2mp8o%40group.calendar.google.com/public/basic" target="_blank">Export as Xml</a></li>
-          </ul>
-        </div>
-      </div>
-    </header>  
-  </section>
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Handson.io</title>
 
-  <section role="subsection">
-    <header>
-      <div class="row">
-        <div class="twelve columns">
-          <h2>THE VALUES OF THE MOVEMENT</h2>    
-        </div>
-      </div>
-    </header>    
+        <script src="js/vendor/modernizr.js"></script>
 
-    <div class="row">
-      <div class="large-3 columns">
-        <div class="value">
-          <h2>COLLABORATION</h2>
-          <p>We value collaborative behaviors.</p>
-        </div>
-      </div>            
-      <div class="large-3 columns">
-        <div class="value">
-          <h2>INNOVATION</h2>
-          <p>We believe that mastering different technologies favours innovation.</p>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="value">
-          <h2>SOLUTION</h2>
-          <p>We believe that the search for a solution to a given problem may lead to the finding of a solution to a different problem.</p>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="value">
-          <h2>RESPECT</h2>
-          <p>We respect the time of everyone and we try hard to clearly establish the benefits of the demonstrated technologies.</p>
-        </div>
-      </div>        
-    </div>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/foundation-icons.css" />
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/webicons.css">
 
-    <div class="row">
-      <div class="large-3 columns">
-        <div class="value">
-          <h2>EVOLUTION</h2>
-          <p>
-            We believe that personal evolution is a key component of the team dynamic.
-          </p>
-        </div>
-      </div>            
-      <div class="large-3 columns">
-        <div class="value">
-          <h2>COMMUNICATION</h2>
-          <p>
-            We believe that active communication is the foundation to a constructive critique and we expect it during our exchanges.
-          </p>
-        </div>
-      </div>
-      <div class="large-3 columns">
-        <div class="value">
-          <h2>EXCHANGE</h2>
-          <p>
-            We believe that the building of a community answers the fundamental needs of sharing, communication, and exchange, common to all humans.
-          </p>
-        </div>
-      </div>
-      <div class="large-3 columns"/>        
-    </div>
-  </section>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 
-  <section id="explaination" role="subsection">
-    <header>
-      <div class="row">
-        <div class="twelve columns">
-          <h2>WHAT IS IT CONCRETELY ?</h2>    
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-45596902-1', 'handson.io');
+          ga('send', 'pageview');
+        </script>
+        <script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
+    </head>
+    <body>
+        <div class="fixed">
+            <nav class="top-bar" data-topbar>
+                <ul class="title-area">
+                    <li class="name">
+                        <h1><a href="http://handson.io"><img src="img/logo.svg"/></a></h1>
+                    </li>
+                    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
-    </header> 
+        
+        <div id="subscribe-confirmation" class="reveal-modal centered-text" data-reveal>
+          <h2>G&#233;nial, vous &#234;tes inscrit !</h2>
+          <p class="lead">Notre prochaine session est pr&#234;te et elle promet d'&#234;tre innovante !</p>
+          <a href="#ad-next-session" class="button success radius" id="ad-next-session-button">VOIR LA PROCHAINE SESSION</a>
+          <a id="subscription-modal-close-btn" class="close-reveal-modal">&#215;</a>
+        </div>
 
-    <div class="row">
-      <div class="large-12 columns text-center">
-        <h2 role="subtitle">PREPARE, SHARE, PUT YOUR HANDS ON !</h2>
-      </div>
-    </div>
+        <div id="pre-registration-modal" class="reveal-modal small centered-text" data-reveal>
+            <form class="pre-registration-form form-inline" id="pre-registration-form" role="form" onsubmit="return preRegister(this)">
+                <h2>Formulaire de pr&#233;-inscription</h2>
+                <div class="row">
+                    <div class="medium-10 medium-centered column">
+                        <div class="row">
+                            <div class="medium-6 columns">
+                                <input id="firstName" type="text" placeholder="Pr&#233;nom" required>
+                            </div>
+                            <div class="medium-6 columns">
+                                <input id="lastName" type="text" placeholder="Nom" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="medium-12 columns">
+                                <input id="prEmail" type="text" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="medium-12 columns">
+                                <input id="address" type="text" placeholder="Num&#233ro, Rue" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="medium-4 columns">
+                                <input id="zip" type="text" placeholder="Code Postal" required>
+                            </div>
+                            <div class="medium-8 columns">
+                                <input id="city" type="text" placeholder="Localit&#233" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="large-12 large-centered columns text-right">
+                                <input type="submit" class="button success radius" id="pre-registration-submit-btn" value="SOUMETTRE">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+          
+          <a id="subscription-modal-close-btn" class="close-reveal-modal">&#215;</a>
+        </div>
 
-    <div class="row">
-      <div class="large-4 columns text-center">
-        <i class="foundicon-idea"></i>
-        <h3>&nbsp;</h3>
-        <p>
-          Find a buddy, prepare a session about a technology that can be showcased in 30 minutes. License your work under <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US" target="_blank">Creative Commons Attribution-ShareAlike</a>.
-        </p>
-      </div>
-      <div class="large-4 columns text-center">
-        <i class="foundicon-cloud"></i>
-        <h3>&nbsp;</h3>
-        <p>
-          Show the world that you support our values, brand your work with <strong>handson.io</strong> banner. Publish your materials on <a href="https://github.com/" target="_blank">GitHub</a> and <a href="http://www.slideshare.net/" target="_blank">Slideshare</a>, make it public. 
-        </p>
-      </div>  
-      <div class="large-4 columns text-center">
-        <i class="foundicon-people"></i>
-        <h3>&nbsp;</h3>
-        <p>You and your buddy, you run the handson during the lunch time in your company, school, university or any other place and you spread the word about our movement.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns text-center">
-        <h3>&nbsp;</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns text-center">
-        <a href="#" data-reveal-id="createHandsonModal" class="large success round radius button">CREATE YOUR HANDSON.IO SESSION NOW</a>
-      </div>
-    </div>
-  </section>   
-  <div id="createHandsonModal" class="reveal-modal">
-    <h2>Wait a bit more !</h2>
-    <p>We are working hard to give you a quick and easy way to setup your <strong>handson.io</strong> session.</p>
-    <p>You can't wait or you want to contribute ? <a href="https://twitter.com/handsonio/founders/members" target="_blank">Get in touch with us to know how !</a></p>
-    <a class="close-reveal-modal">&#215;</a>
-  </div>
+        <header id="homepage-hero">
+            <div class="row">
+                <div class="small-12 large-7 small-centered large-centered columns">
+                    <div class="flex-video widescreen vimeo">
+                        <iframe width="480" height="270" id="player" src="http://www.youtube.com/embed/-NZ85auanvU?autohide=1&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-12 large-12 small-centered large-centered columns"><h1>INSCRIVEZ VOUS &#192; NOTRE NEWSLETTER !</h1></div>
+            </div>
+            <div class="row">
+                <form class="signup-form form-inline" id="signup-form" role="form" onsubmit="return signup(this)">
+                    <div class="small-6 large-2  columns">
+                        &nbsp;
+                    </div>
+                    <div class="small-6 large-5 columns">
+                        <input id="email" class="radius" type="text" placeholder="monadresse@domain.com" required>
+                    </div>
+                    <div class="small-6 large-3  columns">
+                        <!--<a href="#" id="signup-button" class="button success radius">JE M'INSCRIT</a>-->
+                        <input type="submit" id="signup-button" class="button success radius" value="JE M'INSCRIT">
+                    </div>
+                    <div class="small-6 large-2  columns">
+                        &nbsp;
+                    </div>
+                </form>
+            </div>
+            <div class="centered-text" id="lp-arrow-container">
+                <a href="#ad-next-session">
+                    <img src="img/arrow.svg" height="20px"/>
+                </a>
+            </div>
+        </header>
+
+        
+        <section id="ad-next-session">
+
+            <div class="row">
+                <div class="small-12 medium-7 large-7 columns">
+                    <div class="slick-carousel">
+                        <div><img src="img/oculus-white.svg" class="header-image"/></div>
+                        <div><img src="img/sense-white.svg" class="header-image"/></div>
+                    </div>
+                </div>
+                <!--                
+                <div class="hide-for-small-only medium-1 large-1 columns">
+                    &nbsp;
+                </div> 
+                -->               
+                <div id="hero-header" class="small-12 medium-5 large-5 columns">
+                    <p><strong>Du 22/09 au 03/10 - Betagroup Charleroi</strong></p>
+                    <h1>LE SCAN 3D <br>RENCONTRE LA REALIT&#201; VIRTUELLE</h1>
+                    <p>Apprenez en 30 minutes comment scanner un objet en 3D et l'int&#233;grer dans une sc&#232;ne. Exp&#233;rimentez ensuite sa visualisation au travers d'un masque de r&#233;alit&#233; virtuelle. Tout cela dans une ambiance dynamique et d&#233;contract&#233;e !</p>
+                    <a id="pre-registration-btn" class="button large success radius">PRE-INSCRIPTION</a>
+                </div>
+
+            </div>
+            <div class="row ">
+                <div class="small-6 columns">
+                    
+                </div>                
+            </div>
+        </section>
+        <section id="event-description">
+            <div class="row">
+                <div class="small-12 columns centered-text">
+                    <h1>EN COLLABORATION AVEC</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-12 columns centered-text">
+                    &nbsp;
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="large-12 columns centered-text">
+                    <a href="http://www.xtensys.be"><img src="img/xtensys.png"/></a>
+                </div>
+            </div>
+
+        </section>
+        <section id="social">
+            <div class="row">
+                <div class="large-3 columns centered-text">
+                    <a href="https://plus.google.com/+HandsonIo"><i class="fi-social-google-plus"></i></a>
+                </div>
+                <div class="large-3 columns centered-text">
+                    <a href="https://www.facebook.com/handson.io"><i class="fi-social-facebook"></i></a>
+                </div>
+                <div class="large-3 columns centered-text">
+                    <a href="https://www.youtube.com/user/HandsonIo"><i class="fi-social-youtube"></i></a>
+                </div>
+                <div class="large-3 columns centered-text">
+                    <a href="https://twitter.com/handsonio"><i class="fi-social-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/fastclick.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script src="js/foundation/foundation.reveal.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
