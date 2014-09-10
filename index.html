@@ -55,7 +55,20 @@
             <form class="pre-registration-form form-inline" id="pre-registration-form" role="form" onsubmit="return preRegister(this)">
                 <h2>Formulaire de pr&#233;-inscription</h2>
                 <div class="row">
-                    <div class="medium-10 medium-centered column">
+                    <div id="pre-registration-confirmation" class="medium-10 medium-centered column">
+                        <div class="medium-10 medium-centered column">
+                            <div class="medium-12 columns">
+                                <p>Votre inscription &#224; bien &#233;t&#233; enregistr&#233;e !<p>
+                                <p>Plusieurs dates sont pr&#233;vues dans le courant du mois de septembre et d'octrobre, votre pr&#233;-inscription sera cependant tra&#238;t&#233;e en priorit&#233;, soyez attentif &#224; votre bo&#238;te email !<p>
+                            </div>                            
+                        </div>
+                        <div class="medium-10 medium-centered column">
+                            <div class="medium-12 columns">
+                                <a href="#" class="button success radius" id="pre-registration-close-btn">OK</a>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div id="pre-registration-container" class="medium-10 medium-centered column">
                         <div class="row">
                             <div class="medium-6 columns">
                                 <input id="firstName" type="text" placeholder="Pr&#233;nom" required>

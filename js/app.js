@@ -17,6 +17,10 @@ var email = $("#email");
 var subscriptionModalCloseBtn = $("#subscription-modal-close-btn");
 var adNextSessionButton = $("#ad-next-session-button");
 var preRegistrationBtn = $("#pre-registration-btn");
+var preRegistrationCloseBtn = $("#pre-registration-close-btn");
+var preRegistrationConfirmation = $("#pre-registration-confirmation");
+var preRegistrationContainer = $("#pre-registration-container");
+
 
 email.focus();
 
@@ -92,8 +96,9 @@ var onPreRegistrationComplete = function(error) {
     ga('send', 'event', 'pre-registration', 'error');
     console.log('Error !');
   } else {
-    $("#pre-registration-modal").foundation('reveal', 'close');
-    
+    //$("#pre-registration-modal").foundation('reveal', 'close');
+    preRegistrationContainer.toggle();
+    preRegistrationConfirmation.toggle();
     ga('send', 'event', 'pre-registration', 'complete');
   }
 
@@ -111,3 +116,8 @@ preRegistrationBtn.click(function(event) {
   ga('send', 'event', 'pre-registration', 'click');
   $("#pre-registration-modal").foundation('reveal', 'open');
 });
+
+preRegistrationCloseBtn.click(function(event) {
+  ga('send', 'event', 'pre-registration', 'complete-close');
+  $("#pre-registration-modal").foundation('reveal', 'close');
+} );
