@@ -81,10 +81,7 @@ function preRegister(formObj) {
   myFirebaseRef.push({
     firstName : formObj.firstName.value,
     lastName : formObj.lastName.value,
-    email: formObj.prEmail.value,
-    address : formObj.address.value,
-    zip : formObj.zip.value,
-    city : formObj.city.value
+    email: formObj.prEmail.value
   }, onPreRegistrationComplete);
   
   return false;
