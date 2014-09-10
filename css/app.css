@@ -140,16 +140,6 @@ body {
 
   }
 }
-@media only screen and (min-width: 1200px) {
-
-  /*
-  #header-hero {
-    background: #0971B2 url(/img/homepage-hero-white.svg) center no-repeat;
-    background-size: 80%;
-  } 
-  */
-}
-
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
