@@ -167,7 +167,7 @@ and (max-device-width : 480px) {
 @media only screen 
 and (min-width : 321px) {
   #homepage-hero {
-      background: url(/img/small_handsonio_logo_brick_wall_bw.jpg) no-repeat center center fixed; 
+      background: yellow; /*url(/img/small_handsonio_logo_brick_wall_bw.jpg) no-repeat center center fixed; */
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -182,7 +182,7 @@ and (max-width : 320px) {
   #homepage-hero {
     padding-top: 65px;
     height: 720px;
-    background: url(/img/medium_handsonio_logo_brick_wall_bw.jpg) no-repeat center center fixed; 
+    background-color: blue; /*url(/img/medium_handsonio_logo_brick_wall_bw.jpg) no-repeat center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -290,11 +290,12 @@ and (min-width : 1824px) {
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
   #homepage-hero {
-      background: url(/img/small_handsonio_logo_brick_wall_bw.jpg);/* no-repeat center center fixed; 
+      background: url(/img/medium_handsonio_logo_brick_wall_bw.jpg) no-repeat center center fixed; 
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      background-size: cover; */
+      background-size: cover; 
+
   }
 }
 
