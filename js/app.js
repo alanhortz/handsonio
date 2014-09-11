@@ -61,9 +61,11 @@ var onSignupComplete = function(error) {
     ga('send', 'event', 'subscribe', 'error');
     console.log('Error !');
   } else {
-    $("#subscribe-confirmation").foundation('reveal', 'open');
-    email.value = "";
+    
+    email.val("");
+    
     ga('send', 'event', 'subscribe', 'complete');
+    $("#subscribe-confirmation").foundation('reveal', 'open');
   }
 };
 function signup(formObj) {

@@ -113,7 +113,9 @@ body {
     color: white;
     font-size: 15px;
     text-shadow: rgba(0, 0, 0, 0.18) 0px 2px 0px;
-
+  }
+  #container-action-signup-button{
+    text-align: center;
   }
 }
 @media screen
@@ -155,6 +157,10 @@ and (max-device-width : 480px) {
       -o-background-size: cover;
       background-size: cover; 
   }
+  #container-action-signup-button{
+    text-align: center;
+  }
+
 }
 
 /* Smartphones (landscape) ----------- */
@@ -167,20 +173,31 @@ and (min-width : 321px) {
       -o-background-size: cover;
       background-size: cover; 
   }
+
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
   #homepage-hero {
-    padding-top: 30px;
-    height: 200px;
-    background: url(/img/small_handsonio_logo_brick_wall_bw.jpg) no-repeat center center fixed; 
+    padding-top: 65px;
+    height: 720px;
+    background: url(/img/medium_handsonio_logo_brick_wall_bw.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; 
   }
+  #container-action-signup-button{
+    text-align: center;
+  }
+  #email{
+    font-size: 1.3rem;
+    margin: 0 0 2rem 0;
+    padding: 1rem;
+    height: 3.2rem;
+  }
+
 }
 
 /* iPads (portrait and landscape) ----------- */
