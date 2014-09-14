@@ -1,11 +1,19 @@
 $(document).foundation();
 
 $(document).ready(function(){
+
+    var $signupForm = $("#signup-form");
+
     $('.slick-carousel').slick({
         autoplay: true,
         autoplaySpeed: 2000,
         easing: 'easeOutQuart',
         arrows: false
+    });
+
+    $('form input[type="submit"]').bind('click', function ( event ) {
+        if ( event ) event.preventDefault();
+        signup($signupForm);
     });
 });
 
@@ -59,7 +67,6 @@ var onSignupComplete = function(error) {
   if (error) {
     //signupError.innerHTML = 'Sorry. Could not signup.';
     ga('send', 'event', 'subscribe', 'error');
-    console.log('Error !');
   } else {
     
     email.val("");
@@ -68,15 +75,32 @@ var onSignupComplete = function(error) {
     $("#subscribe-confirmation").foundation('reveal', 'open');
   }
 };
-function signup(formObj) {
-  ga('send', 'event', 'subscribe', 'click');
-  var myFirebaseRef = new Firebase("https://handsonio.firebaseio.com/contacts");
-  myFirebaseRef.push({
-    email: formObj.email.value,
-  }, onSignupComplete);
+function signup($form) {
   
-  return false;
+  ga('send', 'event', 'subscribe', 'click');
+
+  $.ajax({
+    type: $form.attr('method'),
+    url: $form.attr('action'),
+    data: $form.serialize(),
+    cache       : false,
+    dataType    : 'jsonp',
+    jsonp       : 'c',
+    contentType: "application/json; charset=utf-8",
+    error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
+    success     : function(data) {
+        if (data.result != "success") {
+            // Something went wrong, do something to notify the user. maybe alert(data.msg);
+        } else {
+            var myFirebaseRef = new Firebase("https://handsonio.firebaseio.com/contacts");
+            myFirebaseRef.push({
+              email: $form[0].email.value,
+            }, onSignupComplete);
+        }
+    }
+  });
 }
+
 function preRegister(formObj) {
   ga('send', 'event', 'pre-registration', 'click');
   var myFirebaseRef = new Firebase("https://handsonio.firebaseio.com/registrations");
