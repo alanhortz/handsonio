@@ -11,7 +11,7 @@ $(document).ready(function(){
         arrows: false
     });
 
-    $('form input[type="submit"]').bind('click', function ( event ) {
+    $('#signup-form input[type="submit"]').bind('click', function ( event ) {
         if ( event ) event.preventDefault();
         signup($signupForm);
     });
@@ -28,6 +28,7 @@ var preRegistrationBtn = $("#pre-registration-btn");
 var preRegistrationCloseBtn = $("#pre-registration-close-btn");
 var preRegistrationConfirmation = $("#pre-registration-confirmation");
 var preRegistrationContainer = $("#pre-registration-container");
+var preRegistrationForm = $("pre-registration-form");
 
 
 email.focus();
@@ -144,3 +145,4 @@ preRegistrationCloseBtn.click(function(event) {
   ga('send', 'event', 'pre-registration', 'complete-close');
   $("#pre-registration-modal").foundation('reveal', 'close');
 } );
+
