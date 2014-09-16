@@ -137,8 +137,8 @@ adNextSessionButton.click(function(event) {
 });
 
 preRegistrationBtn.click(function(event) {
-  ga('send', 'event', 'pre-registration', 'click');
-  $("#pre-registration-modal").foundation('reveal', 'open');
+  ga('send', 'event', 'registration', 'click');
+  //$("#pre-registration-modal").foundation('reveal', 'open');
 });
 
 preRegistrationCloseBtn.click(function(event) {
