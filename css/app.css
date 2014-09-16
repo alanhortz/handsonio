@@ -167,7 +167,7 @@ and (max-device-width : 480px) {
 @media only screen 
 and (min-width : 321px) {
   #homepage-hero {
-      background: yellow; /*url(/img/small_handsonio_logo_brick_wall_bw.jpg) no-repeat center center fixed; */
+      background: url(/img/small_handsonio_logo_brick_wall_bw.jpg) no-repeat center center fixed; */
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
