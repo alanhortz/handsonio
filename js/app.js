@@ -31,7 +31,7 @@ var preRegistrationContainer = $("#pre-registration-container");
 var preRegistrationForm = $("pre-registration-form");
 
 
-email.focus();
+//email.focus();
 
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
