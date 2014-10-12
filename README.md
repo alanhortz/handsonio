@@ -2,5 +2,3 @@ handsonio
 =========
 
 handson.io
-
-b.
