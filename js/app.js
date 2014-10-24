@@ -29,6 +29,7 @@ var preRegistrationCloseBtn = $("#pre-registration-close-btn");
 var preRegistrationConfirmation = $("#pre-registration-confirmation");
 var preRegistrationContainer = $("#pre-registration-container");
 var preRegistrationForm = $("pre-registration-form");
+var menuBlogItem = $("#menu-blog-item");
 
 
 //email.focus();
@@ -145,4 +146,8 @@ preRegistrationCloseBtn.click(function(event) {
   ga('send', 'event', 'pre-registration', 'complete-close');
   $("#pre-registration-modal").foundation('reveal', 'close');
 } );
+
+menuBlogItem.click(function(event) {
+  ga('send', 'event', 'menu-blog-item', 'click');
+});
 
