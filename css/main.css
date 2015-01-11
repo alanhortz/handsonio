@@ -1,0 +1,625 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Alan Hortz - handson.io 2015
+   ========================================================================== */
+
+.centered-text{
+  text-align: center;
+}
+
+@font-face {
+    font-family: 'exoexrtabolditalic';
+    src: url('exo-extrabolditalic-webfont.eot');
+    src: url('exo-extrabolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('exo-extrabolditalic-webfont.woff2') format('woff2'),
+         url('exo-extrabolditalic-webfont.woff') format('woff'),
+         url('exo-extrabolditalic-webfont.ttf') format('truetype'),
+         url('exo-extrabolditalic-webfont.svg#exoextrabolditalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'exo_2extra_light_italic';
+    src: url('exo2-extralightitalic-webfont.eot');
+    src: url('exo2-extralightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('exo2-extralightitalic-webfont.woff2') format('woff2'),
+         url('exo2-extralightitalic-webfont.woff') format('woff'),
+         url('exo2-extralightitalic-webfont.ttf') format('truetype'),
+         url('exo2-extralightitalic-webfont.svg#exo_2extra_light_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('opensans-light-webfont.eot');
+    src: url('opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans-light-webfont.woff2') format('woff2'),
+         url('opensans-light-webfont.woff') format('woff'),
+         url('opensans-light-webfont.ttf') format('truetype'),
+         url('opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'exo_2extra_light';
+    src: url('exo2-extralight-webfont.eot');
+    src: url('exo2-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('exo2-extralight-webfont.woff2') format('woff2'),
+         url('exo2-extralight-webfont.woff') format('woff'),
+         url('exo2-extralight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+    background-color: #ffffff;
+    font-family: 'open_sanslight';
+}
+
+.wrapper {
+
+}
+
+#header-content {
+    background-color: #0971B2;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+    .topics {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .topic-bubble {
+        margin-top: 20px;
+        text-align: center;
+    }
+        .topic-bubble img{
+            
+            display: block;
+            margin-left: auto;
+            margin-right: auto;    
+            width: 160px;
+            height: 160px;
+            
+        }
+        .topic-sub-title {
+            font-family: 'exo_2extra_light';
+            color: #ffffff;
+        }
+
+.logo {
+    font-family: 'exoexrtabolditalic';
+    color: #ffffff;
+    margin-bottom: 0px;
+
+        /*position: absolute;*/
+        /*top: 32%;*/
+        /*left: 50%;*/
+        /*margin: 0px -90px;*/
+        font-size: 2.7em;
+        text-align: center;
+
+
+}
+.sub-title {
+    font-family: 'exo_2extra_light';
+    letter-spacing: 0.4em;
+    color: #ffffff;
+    margin-top: 0px;
+    margin-left: 5px;
+    overflow: hidden;
+    /*position: relative;*/
+        /*top: 32%;*/
+        /*left: 50%;*/
+        /*margin: 0px -70px;*/
+        font-size: 0.8em;
+        text-align: center;
+}
+.content-section {
+    padding-top: 30px;
+    /*padding-bottom: 40px;*/
+    font-family: 'open_sanslight';
+    /*text-align: center;*/
+}
+    .section-title {
+        font-family: 'Montserrat';
+        /*text-align: center;*/
+        /*margin-right: 20px;*/
+        /*margin-left: 20px;*/
+        font-size: 1.3em;
+        color: grey;
+        text-transform: uppercase;
+    }
+
+    .citation{
+        font-family: 'Georgia';
+        font-style: italic;
+        font-size: 0.8em;
+        color: lightgrey;
+    }
+.top-bar {
+    /*background-color:rgba(0,0,0,0.5);*/
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1rem;
+    text-shadow: rgba(0, 0, 0, 0.18) 0px 2px 0px;
+    text-transform: uppercase;    
+}
+
+.grid-button {
+    width:100%;
+}
+  #container-action-signup-button{
+    text-align: center;
+  }
+  #email{
+    font-size: 1.3rem;
+    margin: 0 0 2rem 0;
+    padding: 1rem;
+    height: 3.2rem;
+  }
+
+
+#signup-newsletter-title{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding-top: 1em;  
+    padding-bottom: 0.5em;  
+    font-size: 1.4em;
+    text-shadow: rgba(0, 0, 0, 0.18) 0px 2px 0px;
+    text-align: center;
+    
+  }
+
+
+#ad-next-session {
+    background-color: #0971B2;
+    padding-top: 2em;
+
+}
+.slick-carousel img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;  
+            width: 250px;
+            heigth: 250px;  
+}
+
+#hero-header h1, #hero-header h2, #hero-header a{
+  font-family: 'Montserrat', sans-serif;  
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.18) 0px 2px 0px;
+  text-transform: uppercase;
+}
+
+#hero-header h1{
+  
+
+  font-size: 35px;
+
+}
+
+#hero-header h2{
+  
+  
+  font-size: 1em;
+
+}
+
+
+#hero-header a{
+  
+
+  font-size: 15px;
+
+}
+#hero-header p {  
+  color: #F8F8F8;
+}
+#event-description{
+  padding-top: 3em;
+  padding-bottom: 3em;
+  background: #f7f7f7;
+}
+#event-description h1{
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-size: 35px;
+  text-shadow: rgba(0, 0, 0, 0.18) 0px 2px 0px;  
+}
+#session-order-btn {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+
+.top-bar-section ul li > a {
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: rgba(0, 0, 0, 0.18) 0px 2px 0px;  
+    text-transform: uppercase;
+}
+
+@media only screen and (orientation : landscape) {
+    #header-content {
+        background-color: #0971B2;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+
+.top-bar-section ul{
+    margin-right: 2em;
+}
+
+
+.top-bar-section ul li > a {
+    font-size: 0.8em;
+}
+
+
+.logo {
+
+        font-size: 5.7em;
+}
+.sub-title {
+
+    letter-spacing: 0.4em;
+    margin-left: 8px;
+    /*position: relative;*/
+        /*top: 32%;*/
+        /*left: 50%;*/
+        /*margin: 0px -70px;*/
+        font-size: 1.72em;
+            
+}
+.content-section {
+    margin-bottom: 3em;
+    text-align: left;
+}
+    .section-title {
+        text-align: left;
+        margin-right: 0px;
+        margin-left: 0px;
+
+    }
+        .topic-bubble img{
+            
+ 
+            width: 300px;
+            height: 300px;
+            
+        }
+        .topic-sub-title {
+            font-family: 'exo_2extra_light';
+            color: #ffffff;
+            font-size: 1.5em;
+        }
+
+    #signup-newsletter-section {
+        padding-bottom: 2em;
+        background: url(/img/large_handsonio_logo_brick_wall_bw.jpg) no-repeat fixed; 
+    }
+    #signup-newsletter-title {
+        padding-top: 0.7em;  
+        padding-bottom: 0.5em;  
+        font-size: 35px;
+    }
+    #container-action-signup-button{
+        text-align: left;
+    }
+
+#ad-next-session {
+    background-color: #0971B2;
+    padding-top: 2em;
+    color: white;
+
+}
+.slick-carousel img{
+            width: 350px;
+            heigth: 350px;  
+}
+
+}
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+/*
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+}
+*/
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
