@@ -438,6 +438,10 @@ and (min-width : 1224px) {
     #signup-newsletter-section {
         padding-bottom: 2em;
         background: url(/img/large_handsonio_logo_brick_wall_bw.jpg) no-repeat fixed; 
+            -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
     }
     #signup-newsletter-title {
         padding-top: 0.7em;  
