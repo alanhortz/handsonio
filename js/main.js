@@ -47,6 +47,8 @@ var customPaidSessionContainer = $("#custom-paid-session-container");
 var customPaidSessionConfirmation = $("#custom-paid-session-confirmation");
 var customPaidSessionCloseBtn = $("#custom-paid-session-close-btn");
 
+var requestOfferBtn = $("#request-offer-btn");
+var requestOfferCloseBtn = $("#request-offer-close-btn");
 var requestOfferConfirmation = $("#request-offer-confirmation");
 var requestOfferContainer = $("#request-offer-container");
 
@@ -175,7 +177,6 @@ var requestPaidAndCustomSessionComplete = function(error) {
     customPaidSessionConfirmation.toggle();
     ga('send', 'event', 'requestPaidAndCustomSession', 'complete');
   }
-
 }
 
 var requestOfferComplete = function(error) {
@@ -185,12 +186,10 @@ var requestOfferComplete = function(error) {
     console.log('Error !');
   } else {
     //$("#pre-registration-modal").foundation('reveal', 'close');
-    customPaidSessionContainer.toggle();
-    customPaidSessionConfirmation.toggle();
+    requestOfferContainer.toggle();
+    requestOfferConfirmation.toggle();
     ga('send', 'event', 'requestOffer', 'complete');
   }
-
-}
 
 };
 
@@ -219,6 +218,17 @@ adNextSessionButton.click(function(event) {
 preRegistrationBtn.click(function(event) {
   ga('send', 'event', 'registration', 'click');
   //$("#pre-registration-modal").foundation('reveal', 'open');
+});
+
+requestOfferBtn.click(function(event) {
+  ga('send', 'event', 'requestOffer', 'click');
+  $("#request-offer-modal").foundation('reveal', 'open');
+});
+
+requestOfferCloseBtn.click(function(event) {
+  //ga('send', 'event', 'requestOffer', 'click');
+  $("#request-offer-modal").foundation('reveal', 'close');
+
 });
 
 preRegistrationCloseBtn.click(function(event) {
