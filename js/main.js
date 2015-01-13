@@ -4,6 +4,7 @@ $(document).ready(function(){
 
     var $signupForm = $("#signup-form");
 
+
     $('.topics').slick({
       dots: true,
       arrows: false,
@@ -38,8 +39,21 @@ var preRegistrationCloseBtn = $("#pre-registration-close-btn");
 var preRegistrationConfirmation = $("#pre-registration-confirmation");
 var preRegistrationContainer = $("#pre-registration-container");
 var preRegistrationForm = $("pre-registration-form");
+
+
+
+var sessionOrderBtn = $("#session-order-btn");
+var customPaidSessionContainer = $("#custom-paid-session-container");
+var customPaidSessionConfirmation = $("#custom-paid-session-confirmation");
+var customPaidSessionCloseBtn = $("#custom-paid-session-close-btn");
+
+var requestOfferConfirmation = $("#request-offer-confirmation");
+var requestOfferContainer = $("#request-offer-container");
+
 var menuBlogItem = $("#menu-blog-item");
 
+customPaidSessionConfirmation.hide();
+requestOfferConfirmation.hide();
 
 //email.focus();
 
@@ -124,6 +138,62 @@ function preRegister(formObj) {
   return false;
 
 }
+
+function requestPaidAndCustomSession(formObj) {
+  ga('send', 'event', 'requestPaidAndCustomSession', 'click');
+  var myFirebaseRef = new Firebase("https://handsonio.firebaseio.com/customPaidSessionRequests");
+  myFirebaseRef.push({
+    firstName : formObj.firstName.value,
+    lastName : formObj.lastName.value,
+    company : formObj.company.value,
+    email: formObj.prEmail.value
+  }, requestPaidAndCustomSessionComplete);
+  return false;
+}
+
+function requestOffer(formObj)
+{
+  ga('send', 'event', 'requestOffer', 'click');
+  var myFirebaseRef = new Firebase("https://handsonio.firebaseio.com/offerRequests");
+  myFirebaseRef.push({
+    firstName : formObj.firstName.value,
+    lastName : formObj.lastName.value,
+    company : formObj.company.value,
+    email: formObj.prEmail.value
+  }, requestOfferComplete);
+  return false;
+}
+
+var requestPaidAndCustomSessionComplete = function(error) {
+  if (error) {
+    //signupError.innerHTML = 'Sorry. Could not signup.';
+    ga('send', 'event', 'requestPaidAndCustomSession', 'error');
+    console.log('Error !');
+  } else {
+    //$("#pre-registration-modal").foundation('reveal', 'close');
+    customPaidSessionContainer.toggle();
+    customPaidSessionConfirmation.toggle();
+    ga('send', 'event', 'requestPaidAndCustomSession', 'complete');
+  }
+
+}
+
+var requestOfferComplete = function(error) {
+  if (error) {
+    //signupError.innerHTML = 'Sorry. Could not signup.';
+    ga('send', 'event', 'requestOffer', 'error');
+    console.log('Error !');
+  } else {
+    //$("#pre-registration-modal").foundation('reveal', 'close');
+    customPaidSessionContainer.toggle();
+    customPaidSessionConfirmation.toggle();
+    ga('send', 'event', 'requestOffer', 'complete');
+  }
+
+}
+
+};
+
 var onPreRegistrationComplete = function(error) {
   if (error) {
     //signupError.innerHTML = 'Sorry. Could not signup.';
@@ -152,11 +222,20 @@ preRegistrationBtn.click(function(event) {
 });
 
 preRegistrationCloseBtn.click(function(event) {
-  ga('send', 'event', 'pre-registration', 'complete-close');
+  //ga('send', 'event', 'pre-registration', 'complete-close');
   $("#pre-registration-modal").foundation('reveal', 'close');
 } );
 
+customPaidSessionCloseBtn.click(function (event) {
+  $("#custom-paid-session-modal").foundation('reveal','close');
+});
+
 menuBlogItem.click(function(event) {
   ga('send', 'event', 'menu-blog-item', 'click');
+});
+
+sessionOrderBtn.click(function(event) {
+  ga('send', 'event', 'session-order-button', 'click');
+  $("#custom-paid-session-modal").foundation('reveal', 'open');
 });
 
