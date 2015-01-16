@@ -251,26 +251,35 @@ body {
 }
 
 #email{
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 0 0 2rem 0;
-    padding: 1rem;
-    height: 3.2rem;
+    padding: 0.8rem;
+    height: 2.8rem;
 }
+
 #signup-newsletter-section {
     background-color: grey; 
 }
-    #signup-newsletter-title{
-        font-family: 'Montserrat', sans-serif;
-        color: white;
-        padding-top: 1em;  
-        padding-bottom: 0.5em;  
-        font-size: 1.4em;
-        text-shadow: rgba(0, 0, 0, 0.18) 0px 2px 0px;
-        text-align: center;    
-      }
-    #container-action-signup-button{
-        text-align: center;
-    }
+#signup-newsletter-title{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding-top: 0.7em;   
+    font-size: 1.2em;
+    text-shadow: rgba(0, 0, 0, 0.18) 0px 2px 0px;
+    text-align: center;    
+}
+#next-session-title{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding-top: 1em;  
+    padding-bottom: 0.5em;  
+    font-size: 1.4em;
+    text-shadow: rgba(0, 0, 0, 0.18) 0px 2px 0px;
+    text-align: center;    
+}
+#container-action-signup-button{
+    text-align: center;
+}
     
 #ad-next-session {
     background-color: #0971B2;
@@ -370,53 +379,46 @@ body {
 @media only screen 
 and (min-width : 1224px) {
 
-.top-bar-section ul{
-    margin-right: 2em;
-}
+    .top-bar-section ul{
+        margin-right: 2em;
+    }
+    .top-bar-section ul li > a {
+        font-size: 0.8em;
+    }
+    .logo {
 
+            font-size: 5.7em;
+    }
+    .sub-title {
 
-.top-bar-section ul li > a {
-    font-size: 0.8em;
-}
-
-
-.logo {
-
-        font-size: 5.7em;
-}
-.sub-title {
-
-    letter-spacing: 0.4em;
-    margin-left: 8px;
-    /*position: relative;*/
-        /*top: 32%;*/
-        /*left: 50%;*/
-        /*margin: 0px -70px;*/
-        font-size: 1.72em;
-            
-}
-.content-section {
-    margin-bottom: 3em;
-    text-align: left;
-}
+        letter-spacing: 0.4em;
+        margin-left: 8px;
+        /*position: relative;*/
+            /*top: 32%;*/
+            /*left: 50%;*/
+            /*margin: 0px -70px;*/
+            font-size: 1.72em;
+                
+    }
+    .content-section {
+        margin-bottom: 3em;
+        text-align: left;
+    }
     .section-title {
         text-align: left;
         margin-right: 0px;
         margin-left: 0px;
 
     }
-        .topic-bubble img{
-            
- 
-            width: 300px;
-            height: 300px;
-            
-        }
-        .topic-sub-title {
-            font-family: 'exo_2extra_light';
-            color: #ffffff;
-            font-size: 1.5em;
-        }
+    .topic-bubble img{
+        width: 300px;
+        height: 300px;
+    }
+    .topic-sub-title {
+        font-family: 'exo_2extra_light';
+        color: #ffffff;
+        font-size: 1.5em;
+    }
 
     #signup-newsletter-section {
         padding-bottom: 2em;
@@ -426,30 +428,22 @@ and (min-width : 1224px) {
         -o-background-size: cover;      /* Opera*/
         background-size: cover;         /* Generic*/
     }
-    #signup-newsletter-title {
-        padding-top: 0.7em;  
-        padding-bottom: 0.5em;  
-        font-size: 35px;
-    }
     #container-action-signup-button{
         text-align: left;
     }
 
-#ad-next-session {
-    background-color: #0971B2;
-    padding-top: 2em;
-    color: white;
+    #ad-next-session {
+        background-color: #0971B2;
+        padding-top: 2em;
+        color: white;
+
+    }
+    .slick-carousel img{
+                width: 350px;
+                heigth: 350px;  
+    }
 
 }
-.slick-carousel img{
-            width: 350px;
-            heigth: 350px;  
-}
-
-}
-
-
-
 
 
 /* ==========================================================================
