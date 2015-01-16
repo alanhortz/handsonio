@@ -157,10 +157,6 @@ body {
     font-family: 'open_sanslight';
 }
 
-.wrapper {
-
-}
-
 #header-content {
     background-color: #0971B2;
     padding-top: 60px;
@@ -253,29 +249,29 @@ body {
 .grid-button {
     width:100%;
 }
-  #container-action-signup-button{
-    text-align: center;
-  }
-  #email{
+
+#email{
     font-size: 1.3rem;
     margin: 0 0 2rem 0;
     padding: 1rem;
     height: 3.2rem;
-  }
-
-
-#signup-newsletter-title{
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    padding-top: 1em;  
-    padding-bottom: 0.5em;  
-    font-size: 1.4em;
-    text-shadow: rgba(0, 0, 0, 0.18) 0px 2px 0px;
-    text-align: center;
+}
+#signup-newsletter-section {
+    background-color: grey; 
+}
+    #signup-newsletter-title{
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        padding-top: 1em;  
+        padding-bottom: 0.5em;  
+        font-size: 1.4em;
+        text-shadow: rgba(0, 0, 0, 0.18) 0px 2px 0px;
+        text-align: center;    
+      }
+    #container-action-signup-button{
+        text-align: center;
+    }
     
-  }
-
-
 #ad-next-session {
     background-color: #0971B2;
     padding-top: 2em;
@@ -289,41 +285,27 @@ body {
             width: 250px;
             heigth: 250px;  
 }
-
 #hero-header h1, #hero-header h2, #hero-header a{
   font-family: 'Montserrat', sans-serif;  
   color: white;
   text-shadow: rgba(0, 0, 0, 0.18) 0px 2px 0px;
   text-transform: uppercase;
 }
-
 #hero-header a.normal {
     font-family: 'open_sanslight';
     font-size: 1rem;
     text-decoration: underline;
     text-transform: none !important;
 }
-
-#hero-header h1{
-  
-
+#hero-header h1{ 
   font-size: 35px;
-
 }
 
 #hero-header h2{
-  
-  
   font-size: 1em;
-
 }
-
-
-#hero-header a{
-  
-
+#hero-header a{ 
   font-size: 15px;
-
 }
 #hero-header p {  
   color: #F8F8F8;
@@ -333,17 +315,17 @@ body {
   padding-bottom: 3em;
   background: #f7f7f7;
 }
-#event-description h1{
-  font-family: 'Montserrat', sans-serif;
-  color: black;
-  font-size: 35px;
-  text-shadow: rgba(0, 0, 0, 0.18) 0px 2px 0px;  
-}
+    #event-description h1{
+      font-family: 'Montserrat', sans-serif;
+      color: black;
+      font-size: 35px;
+      text-shadow: rgba(0, 0, 0, 0.18) 0px 2px 0px;  
+    }
+
 #session-order-btn {
     margin-top: 1em;
     margin-bottom: 2em;
 }
-
 
 .top-bar-section ul li > a {
     font-family: 'Montserrat', sans-serif;
@@ -374,13 +356,14 @@ body {
     color: white;
 }
 
+
+
 @media only screen and (orientation : landscape) {
     #header-content {
         background-color: #0971B2;
         padding-top: 40px;
         padding-bottom: 40px;
     }
-
 }
 
 /* Desktops and laptops ----------- */
@@ -438,10 +421,10 @@ and (min-width : 1224px) {
     #signup-newsletter-section {
         padding-bottom: 2em;
         background: url(/img/large_handsonio_logo_brick_wall_bw.jpg) no-repeat fixed; 
-            -webkit-background-size: cover; /* For WebKit*/
-    -moz-background-size: cover;    /* Mozilla*/
-    -o-background-size: cover;      /* Opera*/
-    background-size: cover;         /* Generic*/
+        -webkit-background-size: cover; /* For WebKit*/
+        -moz-background-size: cover;    /* Mozilla*/
+        -o-background-size: cover;      /* Opera*/
+        background-size: cover;         /* Generic*/
     }
     #signup-newsletter-title {
         padding-top: 0.7em;  

@@ -41,7 +41,6 @@ var preRegistrationContainer = $("#pre-registration-container");
 var preRegistrationForm = $("pre-registration-form");
 
 
-
 var sessionOrderBtn = $("#session-order-btn");
 var customPaidSessionContainer = $("#custom-paid-session-container");
 var customPaidSessionConfirmation = $("#custom-paid-session-confirmation");
@@ -118,6 +117,7 @@ function signup($form) {
     success     : function(data) {
         if (data.result != "success") {
             // Something went wrong, do something to notify the user. maybe alert(data.msg);
+
         } else {
             var myFirebaseRef = new Firebase("https://handsonio.firebaseio.com/contacts");
             myFirebaseRef.push({
