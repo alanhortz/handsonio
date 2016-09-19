@@ -119,7 +119,8 @@ function signup($form) {
             // Something went wrong, do something to notify the user. maybe alert(data.msg);
 
         } else {
-            var myFirebaseRef = new Firebase("https://handsonio.firebaseio.com/contacts");
+            //var myFirebaseRef = new Firebase("https://handsonio.firebaseio.com/contacts");
+            var myFirebaseRef = firebase.database().ref("contacts");
             myFirebaseRef.push({
               email: $form[0].email.value,
             }, onSignupComplete);
@@ -130,7 +131,8 @@ function signup($form) {
 
 function preRegister(formObj) {
   ga('send', 'event', 'pre-registration', 'click');
-  var myFirebaseRef = new Firebase("https://handsonio.firebaseio.com/registrations");
+  //var myFirebaseRef = new Firebase("https://handsonio.firebaseio.com/registrations");
+  var myFirebaseRef = firebase.database().ref("registrations");
   myFirebaseRef.push({
     firstName : formObj.firstName.value,
     lastName : formObj.lastName.value,
@@ -143,7 +145,8 @@ function preRegister(formObj) {
 
 function requestPaidAndCustomSession(formObj) {
   ga('send', 'event', 'requestPaidAndCustomSession', 'click');
-  var myFirebaseRef = new Firebase("https://handsonio.firebaseio.com/customPaidSessionRequests");
+  //var myFirebaseRef = new Firebase("https://handsonio.firebaseio.com/customPaidSessionRequests");
+  var myFirebaseRef = firebase.database().ref("customPaidSessionRequests");
   myFirebaseRef.push({
     firstName : formObj.firstName.value,
     lastName : formObj.lastName.value,
@@ -156,7 +159,8 @@ function requestPaidAndCustomSession(formObj) {
 function requestOffer(formObj)
 {
   ga('send', 'event', 'requestOffer', 'click');
-  var myFirebaseRef = new Firebase("https://handsonio.firebaseio.com/offerRequests");
+  //var myFirebaseRef = new Firebase("https://handsonio.firebaseio.com/offerRequests");
+  var myFirebaseRef = firebase.database().ref("offerRequests");
   myFirebaseRef.push({
     firstName : formObj.firstName.value,
     lastName : formObj.lastName.value,

@@ -28,8 +28,18 @@
           ga('create', 'UA-45596902-1', 'handson.io');
           ga('send', 'pageview');
         </script>
-        <script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
-        
+        <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyAT1yXsxFbwpX10NG_-R_-X-3gchmVU7Hs",
+            authDomain: "handsonio-b6e0f.firebaseapp.com",
+            databaseURL: "https://handsonio-b6e0f.firebaseio.com",
+            storageBucket: "",
+            messagingSenderId: "212185982499"
+          };
+          firebase.initializeApp(config);
+        </script>        
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -43,8 +53,12 @@
                 <br>
                 Pour achever votre inscription veuillez cliquer le lien sur l'email que nous venons de vous envoyer.
             </p>
+            
+            <!--
             <p class="lead">Notre prochaine session est pr&#234;te et elle promet d'&#234;tre innovante !</p>
-            <a href="#ad-next-session" class="button success radius" id="ad-next-session-button">VOIR LA PROCHAINE SESSION</a>
+            <a href="#ad-next-session" class="button success radius" id="ad-next-session-button">VOIR LA PROCHAINE SESSION</a
+            >
+            -->
             <a id="subscription-modal-close-btn" class="close-reveal-modal">&#215;</a>
         </div>
 
@@ -260,7 +274,9 @@
                         <p class="section-description">
                             Nous menons une veille technologique active, ceci afin de vous inspirer, de vous permettre d'entrevoir le futur. 
 
-                            Nous expérimentons de manière pratique les produits et concepts à la pointe des dernières avancées scientifiques et technologiques. Nous partageons ces expérimentations au travers de nos sessions d'information. 
+                            Nous expérimentons de manière pratique les produits et concepts à la pointe des dernières avancées scientifiques et technologiques. Nous partageons ces expérimentations au travers de nos sessions d'information.
+
+ 
                         </p>
                 </div>
 
